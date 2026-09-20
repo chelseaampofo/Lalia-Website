@@ -1502,6 +1502,10 @@ footer a:hover {
     border-top: 1px solid #F0EBE6;
 }
 
+.pitch-body{
+    text-align: justify;
+}
+
 /* ============================================
    RESPONSIVE — inner pages
    ============================================ */
