@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style3.css">
+    <title>Book a Consultation</title>
+    <link rel="icon" type="image/png" href="images/favicon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
+    <!-- Calendly Popup Widget CSS & JS -->
+    <link href="https://calendly.com" rel="stylesheet">
+    <script src="https://calendly.com" type="text/javascript"></script>
+</head>
+<body>
+
+<header>
+    <nav>
+        <div class="container">
+            <div class="logo"><a href="index.html"><img src="images/lalia red.png" id="logoimage" alt="Lalia"></a></div>
+            <ul>
+                <li id="coursesbutton"><a href="courses.html"><span>Courses</span></a></li>
+                <li id="aboutsbutton"><a href="aboutus.html"><span>About Us</span></a></li>
+                <li id="contactbutton"><a href="contactus.html"><span>Contact Us</span></a></li>
+            </ul>
+            <div class="leftsidenav">
+                <ul>
+                    <li id="bookbutton"><a href="book.html">Book Now</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+
+<main>
+
+    <section class="inner-hero">
+        <p class="eyebrow">Free consultation</p>
+        <h1>Let's find<br><span class="accent">your language.</span></h1>
+        <p class="inner-hero-sub">Tell us a little about yourself and we'll match you with the right tutor and plan. Free, 30 minutes, no commitment.</p>
+    </section>
+
+    <section class="split-layout">
+        <div class="split-left">
+            <div class="step-card">
+                <span class="step-card-num">1</span>
+                <div>
+                    <h4>Tell us about you</h4>
+                    <p>Your language, your goals and how you learn best.</p>
+                </div>
+            </div>
+            <div class="step-card">
+                <span class="step-card-num">2</span>
+                <div>
+                    <h4>Pick a time</h4>
+                    <p>Choose a slot that fits your week.</p>
+                </div>
+            </div>
+            <div class="step-card">
+                <span class="step-card-num">3</span>
+                <div>
+                    <h4>Meet online</h4>
+                    <p>We'll send a video call link automatically.</p>
+                </div>
+            </div>
+
+            <div class="side-note">
+                <p><strong>No payment needed to book.</strong> We'll discuss pricing and options on the call, and you decide from there.</p>
+            </div>
+        </div>
+
+        <div class="split-right">
+            <form id="bookingForm" action="https://formspree.io/f/mbgldylq" method="POST">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="firstname">First name *</label>
+                        <input type="text" id="firstname" name="first_name" placeholder="Sarah" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="lastname">Last name *</label>
+                        <input type="text" id="lastname" name="last_name" placeholder="Johnson" required>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email address *</label>
+                    <input type="email" id="email" name="email" placeholder="your@email.com" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="phone">Phone number (optional)</label>
+                    <input type="tel" id="phone" name="phone" placeholder="+44 000 000 0000">
+                </div>
+
+                <div class="form-group">
+                    <label for="language">Language you want to learn *</label>
+                    <select id="language" name="language" required>
+                        <option value="">Select a language</option>
+                        <option value="French">French</option>
+                        <option value="Spanish">Spanish</option>
+                        <option value="Italian">Italian</option>
+                        <option value="Portuguese">Portuguese</option>
+                        <option value="Not sure yet">Not sure yet</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="course">Course you're interested in *</label>
+                    <select id="course" name="course" required>
+                        <option value="">Select a course</option>
+                        <option value="Beginner class">Beginner class</option>
+                        <option value="Intermediate class">Intermediate class</option>
+                        <option value="Advanced class">Advanced class</option>
+                        <option value="The Gospel Masterclass">The Gospel Masterclass</option>
+                        <option value="Holiday / travel course">Holiday / travel course</option>
+                        <option value="Perfecting grammar for native speakers">Perfecting grammar for native speakers</option>
+                        <option value="From understanding to speaking">From understanding to speaking</option>
+                        <option value="Interpretation precision and practice">Interpretation precision and practice</option>
+                        <option value="Translation precision and practice">Translation precision and practice</option>
+                        <option value="Not sure yet">Not sure yet</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="level">Your current level (optional)</label>
+                    <select id="level" name="current_level">
+                        <option value="">Select your level</option>
+                        <option value="Complete beginner">Complete beginner</option>
+                        <option value="Some basics">I know some basics</option>
+                        <option value="Intermediate">Intermediate</option>
+                        <option value="Advanced">Advanced</option>
+                        <option value="Native speaker">Native speaker</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="learning">How do you learn best? (optional)</label>
+                    <select id="learning" name="learning_style">
+                        <option value="">Select your learning style</option>
+                        <option value="Listening">Listening</option>
+                        <option value="Reading">Reading</option>
+                        <option value="Speaking out loud">Speaking out loud</option>
+                        <option value="Watching videos">Watching videos</option>
+                        <option value="Writing things down">Writing things down</option>
+                        <option value="A mix of everything">A mix of everything</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="interests">What are you into? (optional)</label>
+                    <input type="text" id="interests" name="interests" placeholder="music, cooking, football, films, reading...">
+                    <span class="form-hint">We use this to build lessons around things you already love.</span>
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Anything else we should know? (optional)</label>
+                    <textarea id="message" name="message" rows="3" placeholder="e.g. I'm learning Italian for a trip to Rome next year..."></textarea>
+                </div>
+
+                <button type="submit" class="btn-submit">Book my free consultation →</button>
+                <p class="form-footer-note">By submitting you agree to be contacted about your consultation.</p>
+            </form>
+
+            <!-- Your updated success box that will contain the calendar -->
+            <div id="successMessage" class="success-message hidden">
+                <div class="success-icon">✓</div>
+                <h2>Thank you!</h2>
+                <p>We've got your details. Please pick your consultation slot below:</p>
+                
+                <!-- This container holds your live calendar window inside your page -->
+                <div id="calendly-inline-embed" style="min-width:320px; height:600px; margin-top:20px;"></div>
+            </div>
+        </div>
+    </section>
+</main>
+
+
+<footer>
+    <div class="footer-content">
+        <div class="footer-column">
+            <img src="images/lalia_white.png" alt="Lalia" class="footer-logo">
+            <p class="footer-tagline">Helping you speak the languages you love.</p>
+        </div>
+        <div class="footer-column">
+            <h4>Learn</h4>
+            <a href="courses.html">Courses</a>
+            <a href="aboutus.html">About Us</a>
+            <a href="aboutus.html">Our mission</a>
+        </div>
+        <div class="footer-column">
+            <h4>Support</h4>
+            <a href="contactus.html">Contact Us</a>
+            <a href="#">Help &amp; Support</a>
+            <a href="#">FAQs</a>
+        </div>
+        <div class="footer-column">
+            <h4>Legal</h4>
+            <a href="#">Privacy &amp; Terms</a>
+            <a href="#">Community Guidelines</a>
+        </div>
+        <div class="footer-column">
+            <h4>Social</h4>
+            <a href="https://www.instagram.com/lalia.learning?stkn=MTJqZTRlbWR6ZGVwOA==">Instagram</a>
+            <a href="https://www.tiktok.com/@lalia.learning">TikTok</a>
+        </div>
+    </div>
+    <div class="footer-bottom"><p>© 2025 Lalia. All rights reserved.</p></div>
+</footer>
+
+<script>
+// ===== SWAP FOR YOUR FRIEND'S CALENDLY LINK =====
+const CALENDLY_LINK = 'https://calendly.com/chelseaampofo02/30min';
+// ================================================
+
+document.getElementById('bookingForm').addEventListener('submit', function(e) {
+    e.preventDefault();
+    const form = e.target;
+    const button = form.querySelector('.btn-submit');
+    button.textContent = 'Sending...';
+    button.disabled = true;
+
+    // Grab name and email values from the form inputs
+    const firstName = form.querySelector('input[name="first_name"]').value;
+    const lastName = form.querySelector('input[name="last_name"]').value;
+    const email = form.querySelector('input[name="email"]').value;
+    const fullName = `${firstName} ${lastName}`;
+
+    fetch(form.action, {
+        method: 'POST',
+        body: new FormData(form),
+        headers: { 'Accept': 'application/json' }
+    }).then(function(response) {
+        if (response.ok) {
+            // 1. Hide the input fields cleanly
+            form.classList.add('hidden');
+            
+            // 2. Unhide the thank you container panel
+            document.getElementById('successMessage').classList.remove('hidden');
+            
+            // 3. Render the calendar panel inside your page with details prefilled
+            const embedContainer = document.getElementById('calendly-inline-embed');
+            const encodedName = encodeURIComponent(fullName);
+            const encodedEmail = encodeURIComponent(email);
+            
+            embedContainer.innerHTML = `
+                <iframe src="${CALENDLY_LINK}?embed_domain=${window.location.hostname}&name=${encodedName}&email=${encodedEmail}" 
+                        width="100%" 
+                        height="100%" 
+                        frameborder="0">
+                </iframe>`;
+                
+        } else {
+            alert('Something went wrong. Please try again or email us directly.');
+            button.textContent = 'Book my free consultation →';
+            button.disabled = false;
+        }
+    }).catch(function() {
+        alert('Something went wrong. Please try again or email us directly.');
+        button.textContent = 'Book my free consultation →';
+        button.disabled = false;
+    });
+});
+</script>
+</body>
+</html>

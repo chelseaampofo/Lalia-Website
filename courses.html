@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style3.css">
+    <title>Courses</title>
+    <link rel="icon" type="image/png" href="images/favicon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<header>
+    <nav>
+        <div class="container">
+            <div class="logo"><a href="index.html"><img src="images/lalia red.png" id="logoimage" alt="Lalia"></a></div>
+            <ul>
+                <li id="coursesbutton"><a href="courses.html"><span>Courses</span></a></li>
+                <li id="aboutsbutton"><a href="aboutus.html"><span>About Us</span></a></li>
+                <li id="contactbutton"><a href="contactus.html"><span>Contact Us</span></a></li>
+            </ul>
+            <div class="leftsidenav">
+                <ul>
+                    <li id="bookbutton"><a href="book.html">Book Now</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+
+<main>
+
+    <section class="inner-hero">
+        <p class="eyebrow">Courses</p>
+        <h1>Find the course<br><span class="accent">that fits you.</span></h1>
+        <p class="inner-hero-sub">Whether you're starting from scratch or perfecting your fluency, there's a course built around your goals. All prices are discussed in your free consultation.</p>
+    </section>
+
+    <section class="language-selector">
+        <p>Choose your language</p>
+        <div class="lang-tabs">
+            <button class="lang-tab active" onclick="showLanguage('french', this)">French</button>
+            <button class="lang-tab" onclick="showLanguage('spanish', this)">Spanish</button>
+            <button class="lang-tab" onclick="showLanguage('italian', this)">Italian</button>
+            <button class="lang-tab" onclick="showLanguage('portuguese', this)">Portuguese</button>
+        </div>
+    </section>
+
+    <div class="courses-content">
+
+        <!-- FRENCH -->
+        <div class="courses-group" id="french">
+            <div class="courses-section">
+                <h2 class="courses-section-title">General courses</h2>
+                <div class="course-cards">
+                    <div class="course-card">
+                        <div class="course-card-top">
+                            <h3>Beginner class</h3>
+                            <span class="course-tag">All welcome</span>
+                        </div>
+                        <p>Never studied French before? We start from the very basics greetings, everyday phrases and pronunciation and build your confidence step by step.</p>
+                        <a href="book.html" class="course-btn">Book a consultation</a>
+                    </div>
+                    <div class="course-card">
+                        <div class="course-card-top">
+                            <h3>Intermediate class</h3>
+                            <span class="course-tag">Some experience</span>
+                        </div>
+                        <p>You know the basics and want to go further. Focus on conversation, vocabulary building, grammar and expressing yourself more naturally.</p>
+                        <a href="book.html" class="course-btn">Book a consultation</a>
+                    </div>
+                    <div class="course-card">
+                        <div class="course-card-top">
+                            <h3>Advanced class</h3>
+                            <span class="course-tag">Strong foundation</span>
+                        </div>
+                        <p>For confident speakers looking to refine fluency, master complex grammar and express themselves with precision and cultural awareness.</p>
+                        <a href="book.html" class="course-btn">Book a consultation</a>
+                    </div>
+                    <div class="course-card">
+                        <div class="course-card-top">
+                            <h3>Holiday / travel course</h3>
+                            <span class="course-tag">All levels</span>
+                        </div>
+                        <p>Essential phrases and vocabulary for travelling. A quick, practical boost before a trip: transport, dining, shopping and more.</p>
+                        <a href="book.html" class="course-btn">Book a consultation</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="gospel-section">
+                <div class="gospel-text">
+                    <span class="course-tag gospel-tag">Featured course</span>
+                    <h2>The Gospel Masterclass</h2>
+                    <p>Study French through Bible passages, devotionals and Christian texts. Deepen both your faith and your fluency a course unlike anything else.</p>
+                    <a href="book.html" class="course-btn-light">Book a consultation</a>
+                </div>
+            </div>
+
+            <div class="courses-section">
+                <h2 class="courses-section-title">Advanced courses</h2>
+                <div class="course-cards">
+                    <div class="course-card">
+                        <div class="course-card-top">
+                            <h3>Perfecting grammar for native speakers</h3>
+                            <span class="course-tag">Native / near-native</span>
+                        </div>
+                        <p>For those who grew up speaking French but want to master written grammar, formal expression and technical accuracy.</p>
+                        <a href="book.html" class="course-btn">Book a consultation</a>
+                    </div>
+                    <div class="course-card">
+                        <div class="course-card-top">
+                            <h3>From understanding to speaking</h3>
+                            <span class="course-tag">Native / near-native</span>
+                        </div>
+                        <p>You understand French well but freeze when you try to speak. This course builds fluency and reduces hesitation through real conversation practice.</p>
+                        <a href="book.html" class="course-btn">Book a consultation</a>
+                    </div>
+                    <div class="course-card">
+                        <div class="course-card-top">
+                            <h3>Interpretation precision &amp; practice</h3>
+                            <span class="course-tag">Advanced level</span>
+                        </div>
+                        <p>Develop professional interpretation skills: listening, processing and conveying meaning accurately in real time.</p>
+                        <a href="book.html" class="course-btn">Book a consultation</a>
+                    </div>
+                    <div class="course-card">
+                        <div class="course-card-top">
+                            <h3>Translation precision &amp; practice</h3>
+                            <span class="course-tag">Advanced level</span>
+                        </div>
+                        <p>Focus on written translation accuracy, tone and nuance. Ideal for translating professionally or sharpening your written command.</p>
+                        <a href="book.html" class="course-btn">Book a consultation</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- SPANISH -->
+        <div class="courses-group hidden" id="spanish">
+            <div class="courses-section">
+                <h2 class="courses-section-title">General courses</h2>
+                <div class="course-cards">
+                    <div class="course-card">
+                        <div class="course-card-top">
+                            <h3>Beginner class</h3>
+                            <span class="course-tag">All welcome</span>
+                        </div>
+                        <p>Never studied Spanish before? We start from the very basics greetings, everyday phrases and pronunciation and build your confidence step by step.</p>
+                        <a href="book.html" class="course-btn">Book a consultation</a>
+                    </div>
+                    <div class="course-card">
+                        <div class="course-card-top">
+                            <h3>Intermediate class</h3>
+                            <span class="course-tag">Some experience</span>
+                        </div>
+                        <p>You know the basics and want to go further. Focus on conversation, vocabulary building, grammar and expressing yourself more naturally.</p>
+                        <a href="book.html" class="course-btn">Book a consultation</a>
+                    </div>
+                    <div class="course-card">
+                        <div class="course-card-top">
+                            <h3>Advanced class</h3>
+                            <span class="course-tag">Strong foundation</span>
+                        </div>
+                        <p>For confident speakers looking to refine fluency, master complex grammar and express themselves with precision and cultural awareness.</p>
+                        <a href="book.html" class="course-btn">Book a consultation</a>
+                    </div>
+                    <div class="course-card">
+                        <div class="course-card-top">
+                            <h3>Holiday / travel course</h3>
+                            <span class="course-tag">All levels</span>
+                        </div>
+                        <p>Essential phrases and vocabulary for travelling. A quick, practical boost before a trip — transport, dining, shopping and more.</p>
+                        <a href="book.html" class="course-btn">Book a consultation</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="gospel-section">
+                <div class="gospel-text">
+                    <span class="course-tag gospel-tag">Featured course</span>
+                    <h2>The Gospel Masterclass</h2>
+                    <p>Study Spanish through Bible passages, devotionals and Christian texts. Deepen both your faith and your fluency a course unlike anything else.</p>
+                    <a href="book.html" class="course-btn-light">Book a consultation</a>
+                </div>
+            </div>
+
+            <div class="courses-section">
+                <h2 class="courses-section-title">Advanced courses</h2>
+                <div class="course-cards">
+                    <div class="course-card">
+                        <div class="course-card-top">
+                            <h3>Perfecting grammar for native speakers</h3>
+                            <span class="course-tag">Native / near-native</span>
+                        </div>
+                        <p>For those who grew up speaking Spanish but want to master written grammar, formal expression and technical accuracy.</p>
+                        <a href="book.html" class="course-btn">Book a consultation</a>
+                    </div>
+                    <div class="course-card">
+                        <div class="course-card-top">
+                            <h3>From understanding to speaking</h3>
+                            <span class="course-tag">Native / near-native</span>
+                        </div>
+                        <p>You understand Spanish well but freeze when you try to speak. This course builds fluency and reduces hesitation through real conversation practice.</p>
+                        <a href="book.html" class="course-btn">Book a consultation</a>
+                    </div>
+                    <div class="course-card">
+                        <div class="course-card-top">
+                            <h3>Interpretation precision &amp; practice</h3>
+                            <span class="course-tag">Advanced level</span>
+                        </div>
+                        <p>Develop professional interpretation skills: listening, processing and conveying meaning accurately in real time.</p>
+                        <a href="book.html" class="course-btn">Book a consultation</a>
+                    </div>
+                    <div class="course-card">
+                        <div class="course-card-top">
+                            <h3>Translation precision &amp; practice</h3>
+                            <span class="course-tag">Advanced level</span>
+                        </div>
+                        <p>Focus on written translation accuracy, tone and nuance. Ideal for translating professionally or sharpening your written command.</p>
+                        <a href="book.html" class="course-btn">Book a consultation</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ITALIAN -->
+        <div class="courses-group hidden" id="italian">
+            <div class="courses-section">
+                <h2 class="courses-section-title">General courses</h2>
+                <div class="course-cards">
+                    <div class="course-card">
+                        <div class="course-card-top">
+                            <h3>Beginner class</h3>
+                            <span class="course-tag">All welcome</span>
+                        </div>
+                        <p>Never studied Italian before? We start from the very basics greetings, everyday phrases and pronunciation and build your confidence step by step.</p>
+                        <a href="book.html" class="course-btn">Book a consultation</a>
+                    </div>
+                    <div class="course-card">
+                        <div class="course-card-top">
+                            <h3>Intermediate class</h3>
+                            <span class="course-tag">Some experience</span>
+                        </div>
+                        <p>You know the basics and want to go further. Focus on conversation, vocabulary building, grammar and expressing yourself more naturally.</p>
+                        <a href="book.html" class="course-btn">Book a consultation</a>
+                    </div>
+                    <div class="course-card">
+                        <div class="course-card-top">
+                            <h3>Advanced class</h3>
+                            <span class="course-tag">Strong foundation</span>
+                        </div>
+                        <p>For confident speakers looking to refine fluency, master complex grammar and express themselves with precision and cultural awareness.</p>
+                        <a href="book.html" class="course-btn">Book a consultation</a>
+                    </div>
+                    <div class="course-card">
+                        <div class="course-card-top">
+                            <h3>Holiday / travel course</h3>
+                            <span class="course-tag">All levels</span>
+                        </div>
+                        <p>Essential phrases and vocabulary for travelling. A quick, practical boost before a trip transport, dining, shopping and more.</p>
+                        <a href="book.html" class="course-btn">Book a consultation</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="gospel-section">
+                <div class="gospel-text">
+                    <span class="course-tag gospel-tag">Featured course</span>
+                    <h2>The Gospel Masterclass</h2>
+                    <p>Study Italian through Bible passages, devotionals and Christian texts. Deepen both your faith and your fluency a course unlike anything else.</p>
+                    <a href="book.html" class="course-btn-light">Book a consultation</a>
+                </div>
+            </div>
+
+            <div class="courses-section">
+                <h2 class="courses-section-title">Advanced courses</h2>
+                <div class="course-cards">
+                    <div class="course-card">
+                        <div class="course-card-top">
+                            <h3>Perfecting grammar for native speakers</h3>
+                            <span class="course-tag">Native / near-native</span>
+                        </div>
+                        <p>For those who grew up speaking Italian but want to master written grammar, formal expression and technical accuracy.</p>
+                        <a href="book.html" class="course-btn">Book a consultation</a>
+                    </div>
+                    <div class="course-card">
+                        <div class="course-card-top">
+                            <h3>From understanding to speaking</h3>
+                            <span class="course-tag">Native / near-native</span>
+                        </div>
+                        <p>You understand Italian well but freeze when you try to speak. This course builds fluency and reduces hesitation through real conversation practice.</p>
+                        <a href="book.html" class="course-btn">Book a consultation</a>
+                    </div>
+                    <div class="course-card">
+                        <div class="course-card-top">
+                            <h3>Interpretation precision &amp; practice</h3>
+                            <span class="course-tag">Advanced level</span>
+                        </div>
+                        <p>Develop professional interpretation skills: listening, processing and conveying meaning accurately in real time.</p>
+                        <a href="book.html" class="course-btn">Book a consultation</a>
+                    </div>
+                    <div class="course-card">
+                        <div class="course-card-top">
+                            <h3>Translation precision &amp; practice</h3>
+                            <span class="course-tag">Advanced level</span>
+                        </div>
+                        <p>Focus on written translation accuracy, tone and nuance. Ideal for translating professionally or sharpening your written command.</p>
+                        <a href="book.html" class="course-btn">Book a consultation</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- PORTUGUESE -->
+        <div class="courses-group hidden" id="portuguese">
+            <div class="courses-section">
+                <h2 class="courses-section-title">General courses</h2>
+                <div class="course-cards">
+                    <div class="course-card">
+                        <div class="course-card-top">
+                            <h3>Beginner class</h3>
+                            <span class="course-tag">All welcome</span>
+                        </div>
+                        <p>Never studied Portuguese before? We start from the very basics greetings, everyday phrases and pronunciation and build your confidence step by step.</p>
+                        <a href="book.html" class="course-btn">Book a consultation</a>
+                    </div>
+                    <div class="course-card">
+                        <div class="course-card-top">
+                            <h3>Intermediate class</h3>
+                            <span class="course-tag">Some experience</span>
+                        </div>
+                        <p>You know the basics and want to go further. Focus on conversation, vocabulary building, grammar and expressing yourself more naturally.</p>
+                        <a href="book.html" class="course-btn">Book a consultation</a>
+                    </div>
+                    <div class="course-card">
+                        <div class="course-card-top">
+                            <h3>Advanced class</h3>
+                            <span class="course-tag">Strong foundation</span>
+                        </div>
+                        <p>For confident speakers looking to refine fluency, master complex grammar and express themselves with precision and cultural awareness.</p>
+                        <a href="book.html" class="course-btn">Book a consultation</a>
+                    </div>
+                    <div class="course-card">
+                        <div class="course-card-top">
+                            <h3>Holiday / travel course</h3>
+                            <span class="course-tag">All levels</span>
+                        </div>
+                        <p>Essential phrases and vocabulary for travelling. A quick, practical boost before a trip, transport, dining, shopping and more.</p>
+                        <a href="book.html" class="course-btn">Book a consultation</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="gospel-section">
+                <div class="gospel-text">
+                    <span class="course-tag gospel-tag">Featured course</span>
+                    <h2>The Gospel Masterclass</h2>
+                    <p>Study Portuguese through Bible passages, devotionals and Christian texts. Deepen both your faith and your fluency — a course unlike anything else.</p>
+                    <a href="book.html" class="course-btn-light">Book a consultation</a>
+                </div>
+            </div>
+
+            <div class="courses-section">
+                <h2 class="courses-section-title">Advanced courses</h2>
+                <div class="course-cards">
+                    <div class="course-card">
+                        <div class="course-card-top">
+                            <h3>Perfecting grammar for native speakers</h3>
+                            <span class="course-tag">Native / near-native</span>
+                        </div>
+                        <p>For those who grew up speaking Portuguese but want to master written grammar, formal expression and technical accuracy.</p>
+                        <a href="book.html" class="course-btn">Book a consultation</a>
+                    </div>
+                    <div class="course-card">
+                        <div class="course-card-top">
+                            <h3>From understanding to speaking</h3>
+                            <span class="course-tag">Native / near-native</span>
+                        </div>
+                        <p>You understand Portuguese well but freeze when you try to speak. This course builds fluency and reduces hesitation through real conversation practice.</p>
+                        <a href="book.html" class="course-btn">Book a consultation</a>
+                    </div>
+                    <div class="course-card">
+                        <div class="course-card-top">
+                            <h3>Interpretation precision &amp; practice</h3>
+                            <span class="course-tag">Advanced level</span>
+                        </div>
+                        <p>Develop professional interpretation skills: listening, processing and conveying meaning accurately in real time.</p>
+                        <a href="book.html" class="course-btn">Book a consultation</a>
+                    </div>
+                    <div class="course-card">
+                        <div class="course-card-top">
+                            <h3>Translation precision &amp; practice</h3>
+                            <span class="course-tag">Advanced level</span>
+                        </div>
+                        <p>Focus on written translation accuracy, tone and nuance. Ideal for translating professionally or sharpening your written command.</p>
+                        <a href="book.html" class="course-btn">Book a consultation</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <section class="closing-cta">
+        <h2>Not sure which one?</h2>
+        <p>Book a free consultation and we'll help you find the right fit.</p>
+        <a href="book.html" class="btn-solid">Book a free consultation</a>
+    </section>
+
+</main>
+
+<footer>
+    <div class="footer-content">
+        <div class="footer-column">
+            <img src="images/lalia_white.png" alt="Lalia" class="footer-logo">
+            <p class="footer-tagline">Helping you speak the languages you love.</p>
+        </div>
+        <div class="footer-column">
+            <h4>Learn</h4>
+            <a href="courses.html">Courses</a>
+            <a href="aboutus.html">About Us</a>
+            <a href="aboutus.html">Our mission</a>
+        </div>
+        <div class="footer-column">
+            <h4>Support</h4>
+            <a href="contactus.html">Contact Us</a>
+            <a href="#">Help &amp; Support</a>
+            <a href="#">FAQs</a>
+        </div>
+        <div class="footer-column">
+            <h4>Legal</h4>
+            <a href="#">Privacy &amp; Terms</a>
+            <a href="#">Community Guidelines</a>
+        </div>
+        <div class="footer-column">
+            <h4>Social</h4>
+            <a href="https://www.instagram.com/lalia.learning?stkn=MTJqZTRlbWR6ZGVwOA==">Instagram</a>
+            <a href="https://www.tiktok.com/@lalia.learning">TikTok</a>
+        </div>
+    </div>
+    <div class="footer-bottom"><p>© 2025 Lalia. All rights reserved.</p></div>
+</footer>
+
+<script>
+function showLanguage(lang, clickedButton) {
+    document.querySelectorAll('.courses-group').forEach(function(g) {
+        g.classList.add('hidden');
+    });
+    document.querySelectorAll('.lang-tab').forEach(function(t) {
+        t.classList.remove('active');
+    });
+    document.getElementById(lang).classList.remove('hidden');
+    clickedButton.classList.add('active');
+}
+</script>
+
+</body>
+</html>
